@@ -1,0 +1,347 @@
+/* 基本設定 */
+body {
+  background-color: #121212; /* 背景色をダークグレーに */
+  color: #E0E0E0; /* 文字色をライトグレーに */
+  font-family: 'Press Start 2P', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 中央揃え */
+  cursor: url("{% static 'images/cursor.png' %}") 16 16, auto;
+}
+
+
+/* ロゴ */
+#logo-container {
+  text-align: center;
+  margin-top: 50px; /* ロゴの上部にスペースを空ける */
+}
+
+#logo {
+  width: 225px; /* ロゴのサイズ調整 */
+  height: auto;
+  image-rendering: crisp-edges; /* 拡大時にぼやけないようにする */
+}
+
+
+/* ヘッダーのアイコンメニュー */
+header {
+  position: relative; /* アイコンを右上に配置するために位置指定を親要素で行う */
+}
+
+#class-container {
+  text-align: right;
+  position: relative;
+}
+
+/* ロゴの位置を調整 */
+#logo-container {
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+/* ナビゲーション */
+nav {
+  background-color: transparent;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #E0E0E0;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: #333333;
+  color: #FFF;
+}
+
+
+/* ナビゲーション */
+nav {
+  background-color: transparent; /* ナビゲーションバーの背景色 */
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center; /* メニュー項目を横並びにする */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #E0E0E0; /* リンクの色をライトグレーに */
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: #333333; /* ホバー時の背景色 */
+  color: #FFF; /* ホバー時の文字色 */
+}
+
+/* ゲームカード */
+.game-card {
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.game-card:hover {
+  background-color: transparent;
+}
+
+.game-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.game-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game-list-container .game-card {
+  width: 200px;
+  margin: 10px;
+}
+
+/* ゲーム詳細ページ */
+.game-detail-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.game-detail-container img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.game-detail-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.game-detail-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.game-detail-container .btn {
+  color: #E0E0E0;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.game-detail-container .btn:hover {
+  color: #808080;
+}
+
+/* フッター */
+/* フッター */
+footer {
+  background-color: #1F1F1F;
+  color: #E0E0E0;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+/* "2024 Game Folder Distribution"を中央に大きく表示 */
+footer p {
+  font-size: 24px;  /* フォントサイズを大きく */
+  font-weight: bold;  /* 太字にする */
+  margin-bottom: 40px;  /* フッターメニューとの間にスペースを追加 */
+  text-align: center;  /* 中央揃え */
+}
+
+/* フッターメニュー */
+footer .footer-menu {
+  list-style-type: none;  /* リストスタイルを消す */
+  padding: 0;
+  margin: 0;
+  position: absolute;  /* 絶対位置で右下に配置 */
+  right: 20px;  /* 右側に少し余白 */
+  bottom: 20px;  /* 下側に少し余白 */
+}
+
+footer .footer-menu li {
+  margin: 10px 0;  /* 各メニュー項目の間隔 */
+}
+
+footer .footer-menu a {
+  color: #E0E0E0;  /* リンクの色を統一 */
+  text-decoration: none;  /* 下線を消す */
+  font-size: 18px;  /* フォントサイズを調整 */
+  padding: 10px;
+  border-radius: 4px;
+  display: block;  /* ブロック要素として縦並びに */
+  text-align: center;  /* 中央揃え */
+}
+
+footer .footer-menu a:hover {
+  background-color: #333333;  /* ホバー時の背景色 */
+  color: #FFF;  /* ホバー時の文字色 */
+}
+
+
+/* その他 */
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* フォームのスタイル */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 500px;  /* 最大幅を指定 */
+  margin: 0 auto;  /* 中央揃え */
+  padding: 20px;
+}
+
+/* フォーム内の各フィールド */
+form input, form textarea, form button {
+  width: 100%;  /* 入力フィールドを横幅100%にする */
+  padding: 10px;
+  margin: 0px 0px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  font-size: 16px;
+}
+
+/* ボタンのデザイン */
+form button {
+  background-color: #494949;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #707070;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #1F1F1F;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-form .form-group {
+  margin-bottom: 15px;
+}
+
+.login-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #121212;
+  color: #E0E0E0;
+}
+
+.login-form .btn {
+  text-align: center;
+  background-color: #494949;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-form .btn:hover {
+  background-color: #707070;
+}
+
+.login-form a {
+  color: #E0E0E0;
+  text-decoration: none;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+/* ボタンのスタイル */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #9583e2;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #a99de1;
+}
+
+html, body {
+  cursor: url("{% static 'images/cursor.png' %}") 16 16, auto;
+}

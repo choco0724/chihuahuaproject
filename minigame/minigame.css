@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: url('images/space.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 20px;
+  color: white;
+}
+
+#game-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  position: relative;
+}
+
+.ufo {
+  position: absolute;
+  width: 120px;  /* UFOのサイズを大きく設定 */
+  height: 120px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none; /* 初期状態では表示しない */
+}
+
+#start-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#start-button:disabled {
+  background-color: #ccc;
+}

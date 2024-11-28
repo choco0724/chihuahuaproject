@@ -1,0 +1,16 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <main>
+        <div class="game-list-container">
+            {% for game in games %}
+                <div class="game-card">
+                    <a href="{% url 'gameapp:game_detail' game.id %}">
+                        <img src="{{ game.thumbnail.url }}" alt="{{ game.name }}" class="game-thumbnail">
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+{% endblock %}

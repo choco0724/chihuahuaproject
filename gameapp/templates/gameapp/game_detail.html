@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main>
+        <div class="game-detail-container">
+            <h1>{{ game.name }}</h1>
+            <img src="{{ game.thumbnail.url }}" alt="{{ game.name }}" class="game-thumbnail">
+            <p>{{ game.description }}</p>
+            {% if game.file %}
+                <a href="{{ game.file.url }}" class="btn" download>→ DOWNLOAD</a>
+            {% else %}
+                <p>NO DATA</p>
+            {% endif %}
+        </div>
+    </main>
+{% endblock %}
