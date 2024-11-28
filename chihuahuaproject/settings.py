@@ -125,7 +125,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'chihuapp/static',  # これが正しいパス
+    BASE_DIR / 'static',  # これが正しいパス
 ]
 
 
